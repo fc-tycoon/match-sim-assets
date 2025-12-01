@@ -1,0 +1,24 @@
+# FC Tycoon Match Simulator Assets - Git Ignore
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Blender backups (keep .blend, ignore auto-backups)
+*.blend1
+*.blend2
+*.blend3
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Editor folders
+.vscode/
+.idea/
+
+# Build artifacts
+__pycache__/
+*.pyc

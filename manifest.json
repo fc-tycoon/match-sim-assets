@@ -1,0 +1,788 @@
+{
+	"version": "1.3.0",
+	"basePath": "/3d-assets",
+	"assets": [
+		{
+			"key": "skybox",
+			"path": "/skybox/kloofendal_48d_partly_cloudy_puresky.jpg",
+			"category": "texture",
+			"priority": "critical",
+			"description": "Equirectangular pure sky HDRI from Poly Haven"
+		},
+		{
+			"key": "grass-texture",
+			"path": "/textures/grass_m.jpg",
+			"category": "texture",
+			"priority": "critical"
+		},
+		{
+			"key": "ball",
+			"path": "/models/ball.glb",
+			"category": "model",
+			"priority": "critical",
+			"fallback": "sphere",
+			"materials": {
+				"maxMetalness": 0.1,
+				"minRoughness": 0.6,
+				"emissiveMultiplier": 0.15,
+				"castShadow": true,
+				"receiveShadow": true
+			}
+		},
+		{
+			"key": "player",
+			"path": "/models/player.glb",
+			"category": "model",
+			"priority": "critical",
+			"fallback": "capsule",
+			"scale": 1.8,
+			"yOffset": 0,
+			"materials": {
+				"maxMetalness": 0.3,
+				"minRoughness": 0.6,
+				"castShadow": true,
+				"receiveShadow": false
+			}
+		},
+		{
+			"key": "anim-breathing-idle",
+			"path": "/animations/Breathing Idle.fbx",
+			"category": "animation",
+			"priority": "high",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-dribble",
+			"path": "/animations/Dribble.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-header-soccerball",
+			"path": "/animations/Header Soccerball.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Juggling Header Of A Soccer Ball"
+		},
+		{
+			"key": "anim-header",
+			"path": "/animations/Header.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jog-backward-diagonal-1",
+			"path": "/animations/Jog Backward Diagonal (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jog-backward-diagonal",
+			"path": "/animations/Jog Backward Diagonal.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jog-backward",
+			"path": "/animations/Jog Backward.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jog-forward-diagonal-1",
+			"path": "/animations/Jog Forward Diagonal (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jog-forward-diagonal",
+			"path": "/animations/Jog Forward Diagonal.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jog-forward",
+			"path": "/animations/Jog Forward.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jog-strafe-left",
+			"path": "/animations/Jog Strafe Left.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jog-strafe-right",
+			"path": "/animations/Jog Strafe Right.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-kick-soccerball-1",
+			"path": "/animations/Kick Soccerball (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Juggling Right Kick Of A Soccer Ball"
+		},
+		{
+			"key": "anim-kick-soccerball",
+			"path": "/animations/Kick Soccerball.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Juggling Left Kick Of A Soccer Ball"
+		},
+		{
+			"key": "anim-kneeing-soccerball",
+			"path": "/animations/Kneeing Soccerball.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Juggling Right Knee Of A Soccer Ball"
+		},
+		{
+			"key": "anim-scissor-kick",
+			"path": "/animations/Scissor Kick.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-soccer-header",
+			"path": "/animations/Soccer Header.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Soccer Header In Place"
+		},
+		{
+			"key": "anim-soccer-pass",
+			"path": "/animations/Soccer Pass.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Soccer Pass From Idle Pose"
+		},
+		{
+			"key": "anim-soccer-penalty-kick",
+			"path": "/animations/Soccer Penalty Kick.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Male Soccer Penalty Kick"
+		},
+		{
+			"key": "anim-soccer-spin",
+			"path": "/animations/Soccer Spin.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Soccer 360 Spin"
+		},
+		{
+			"key": "anim-soccer-tackle-1",
+			"path": "/animations/Soccer Tackle (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Running Fall Over A Soccer Slide Tackle"
+		},
+		{
+			"key": "anim-soccer-tackle-2",
+			"path": "/animations/Soccer Tackle (2).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Standing Fall Over A Soccer Slide Tackle"
+		},
+		{
+			"key": "anim-soccer-tackle",
+			"path": "/animations/Soccer Tackle.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Soccer Slide Tackle"
+		},
+		{
+			"key": "anim-soccer-trip",
+			"path": "/animations/Soccer Trip.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": "Tripping Over A Soccer Tackle"
+		},
+		{
+			"key": "anim-throw-in",
+			"path": "/animations/Throw In.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-catwalk-walk-forward",
+			"path": "/animations/Catwalk Walk Forward 03.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-celebration-cartwheel",
+			"path": "/animations/Celebration - Cartwheel.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-celebration-hip-hop-dancing-1",
+			"path": "/animations/Celebration - Hip Hop Dancing (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-celebration-hip-hop-dancing",
+			"path": "/animations/Celebration - Hip Hop Dancing.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-celebration-shooting-arrow",
+			"path": "/animations/Celebration - Shooting Arrow.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-celebration-victory",
+			"path": "/animations/Celebration - Victory.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-celebration-golf-chip",
+			"path": "/animations/Celebraton - Golf Chip.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-change-direction",
+			"path": "/animations/Change Direction.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-chip",
+			"path": "/animations/Chip.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-fall-flat",
+			"path": "/animations/Fall Flat.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-fast-run",
+			"path": "/animations/Fast Run.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalie-throw",
+			"path": "/animations/Goalie Throw.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-body-block-1",
+			"path": "/animations/Goalkeeper Body Block (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-body-block-2",
+			"path": "/animations/Goalkeeper Body Block (2).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-body-block",
+			"path": "/animations/Goalkeeper Body Block.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-catch-1",
+			"path": "/animations/Goalkeeper Catch (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-catch-2",
+			"path": "/animations/Goalkeeper Catch (2).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-catch-3",
+			"path": "/animations/Goalkeeper Catch (3).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-catch",
+			"path": "/animations/Goalkeeper Catch.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-directing-1",
+			"path": "/animations/Goalkeeper Directing (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-directing",
+			"path": "/animations/Goalkeeper Directing.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-diving-save-1",
+			"path": "/animations/Goalkeeper Diving Save (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-diving-save",
+			"path": "/animations/Goalkeeper Diving Save.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-drop-kick",
+			"path": "/animations/Goalkeeper Drop Kick.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-idle-1",
+			"path": "/animations/Goalkeeper Idle (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-idle",
+			"path": "/animations/Goalkeeper Idle.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-miss",
+			"path": "/animations/Goalkeeper Miss.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-overhand-throw",
+			"path": "/animations/Goalkeeper Overhand Throw.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-pass",
+			"path": "/animations/Goalkeeper Pass.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-placing-ball-1",
+			"path": "/animations/Goalkeeper Placing Ball (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-placing-ball",
+			"path": "/animations/Goalkeeper Placing Ball.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-scoop",
+			"path": "/animations/Goalkeeper Scoop.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-sidestep-1",
+			"path": "/animations/Goalkeeper Sidestep (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-goalkeeper-sidestep",
+			"path": "/animations/Goalkeeper Sidestep.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-happy-idle",
+			"path": "/animations/Happy Idle.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-idle-1",
+			"path": "/animations/Idle (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-idle-2",
+			"path": "/animations/Idle (2).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-idle",
+			"path": "/animations/Idle.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jog-backward-1",
+			"path": "/animations/Jog Backward (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jogging-stumble",
+			"path": "/animations/Jogging Stumble.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-jump",
+			"path": "/animations/Jump.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-kneeing-soccerball-1",
+			"path": "/animations/Kneeing Soccerball (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-kick-up-soccerball",
+			"path": "/animations/Kick Up Soccerball.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-look-behind-run",
+			"path": "/animations/Look Behind Run.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-offensive-idle",
+			"path": "/animations/Offensive Idle.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-receive-soccerball",
+			"path": "/animations/Receive Soccerball.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-receive",
+			"path": "/animations/Receive.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-run-forward-arc-right",
+			"path": "/animations/Run Forward Arc Right.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-run-look-back",
+			"path": "/animations/Run Look Back.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-running-backward",
+			"path": "/animations/Running Backward.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-running-right-turn",
+			"path": "/animations/Running Right Turn.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-running-slide",
+			"path": "/animations/Running Slide.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-running-to-turn",
+			"path": "/animations/Running To Turn.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-running",
+			"path": "/animations/Running.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-samba-dancing",
+			"path": "/animations/Samba Dancing.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-slow-jog-backwards",
+			"path": "/animations/Slow Jog Backwards.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-slow-run",
+			"path": "/animations/Slow Run.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-soccer-idle",
+			"path": "/animations/Soccer Idle.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-sprint",
+			"path": "/animations/Sprint.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-stall-soccerball-1",
+			"path": "/animations/Stall Soccerball (1).fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-stall-soccerball",
+			"path": "/animations/Stall Soccerball.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-standard-run",
+			"path": "/animations/Standard Run.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-standing-idle",
+			"path": "/animations/Standing Idle.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-standing-up",
+			"path": "/animations/Standing Up.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-strike-forward-jog",
+			"path": "/animations/Strike Foward Jog.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-transition",
+			"path": "/animations/Transition.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "stadium",
+			"path": "/models/stadium1.glb",
+			"category": "prop",
+			"priority": "low",
+			"materials": {
+				"maxMetalness": 0.2,
+				"minRoughness": 0.5,
+				"castShadow": false,
+				"receiveShadow": false
+			}
+		}
+	]
+}
