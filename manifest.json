@@ -741,6 +741,14 @@
 			"description": ""
 		},
 		{
+			"key": "anim-standard-walk",
+			"path": "/animations/Standard Walk.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
 			"key": "anim-standing-idle",
 			"path": "/animations/Standing Idle.fbx",
 			"category": "animation",
@@ -767,6 +775,14 @@
 		{
 			"key": "anim-transition",
 			"path": "/animations/Transition.fbx",
+			"category": "animation",
+			"priority": "low",
+			"target": "player",
+			"description": ""
+		},
+		{
+			"key": "anim-walking",
+			"path": "/animations/Walking.fbx",
 			"category": "animation",
 			"priority": "low",
 			"target": "player",
